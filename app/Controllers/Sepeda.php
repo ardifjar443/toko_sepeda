@@ -38,4 +38,15 @@ class Sepeda extends BaseController
             return view('menu_utama/menu', $data);
         }
     }
+
+
+    public function get($id)
+    {
+        $sepeda = $this->model_sepeda->getSepedaById($id);
+        if (!$sepeda) {
+            return $this->response->setStatusCode(404)->setJSON(['error' => 'sepeda tidak ditemukan']);
+        }
+        $sepeda['available_types'] = ['MTB', 'roadbike', 'Hybrid', 'BMX', 'Sepeda Lipat', 'Gravel'];
+        return $this->response->setJSON($sepeda);
+    }
 }

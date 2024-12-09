@@ -12,3 +12,4 @@ $routes->post('/register', 'User::store');
 $routes->get('/login', 'User::indexlogin');
 $routes->post('/login', 'User::login');
 $routes->get('/logout', 'User::logout');
+$routes->get('/sepeda/(:num)', 'Sepeda::get/$1');

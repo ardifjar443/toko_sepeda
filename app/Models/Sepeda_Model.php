@@ -14,4 +14,9 @@ class Sepeda_Model extends Model
     {
         return $this->findAll();
     }
+
+    public function getSepedaById($id)
+    {
+        return $this->find($id);
+    }
 }

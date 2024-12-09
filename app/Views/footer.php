@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <div class="px-40 pt-10 flex justify-center items-center flex-col gap-4">
-        <h1 class="text-blue-600 text-2xl">
+    <div class="px-40 pt-10 flex justify-center items-center flex-col gap-4 bg-white">
+        <h1 class="text-blue-600 text-2xl font-semibold">
             Ardi Fajar Arifin
-            <span class="bg-blue-600 text-gray-100 p-1 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition duration-300 me-1 ">
+            <span class="bg-blue-600 text-white p-1 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 me-1 ">
                 10122266
             </span>
             IF-7
@@ -27,14 +27,14 @@
                 href="https://medium.com/@ardifjar443"
                 target="_blank">
                 <span>Medium</span>
-                <img src="./img/medium.png" alt="" class="w-[20px] h-[20px]" />
+                <img src="<?= base_url('img/medium.png') ?>" alt="" class="w-[20px] h-[20px]" />
             </a>
             <a
                 class="flex gap-2 opacity-50 hover:opacity-100"
                 href="https://github.com/ardifjar443"
                 target="_blank">
                 <span>Github</span>
-                <img src="./img/github.png" alt="" class="w-[20px] h-[20px]" />
+                <img src="<?= base_url('img/github.png') ?>" alt="" class="w-[20px] h-[20px]" />
             </a>
             <a
                 class="flex gap-2 opacity-50 hover:opacity-100"
@@ -42,7 +42,7 @@
                 target="_blank">
                 <span>Linkedin</span>
                 <img
-                    src="./img/linkedin.png"
+                    src="<?= base_url('img/linkedin.png') ?>"
                     alt=""
                     class="w-[20px] h-[20px]" />
             </a>
